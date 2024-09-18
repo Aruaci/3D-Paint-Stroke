@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Draw</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1>Upload and Draw on an Image</h1>
+    <input type="file" id="uploadImage" accept="image/*">
+    <div id="canvas-div">
+        <canvas id="imageCanvas" width="500" height="500"></canvas>
+        <canvas id="refImageCanvas" width="500" height="500"></canvas>
+    </div>
+    <div class="slidecontainer">
+        <p>Brush Size</p>
+        <input id="brush-size" type="range" min="1" max="80" value="25">
+    </div>
+    <button id="enable-pen-btn">Pen</button>
+    <button id="enable-eraser-btn">Eraser</button>    
+    <script src="script.js"></script>
+</body>
+</html>
